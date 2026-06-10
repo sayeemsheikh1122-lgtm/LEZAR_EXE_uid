@@ -59,4 +59,6 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
   console.log(`UID Portal running on port ${PORT}`);
   console.log(`Self-ping URL: ${RENDER_URL || '(set RENDER_EXTERNAL_URL)'}/ping`);
-});
+});const WEBSITE_URL = process.env.WEBSITE_URL || 'http://localhost:3000';
+exports.WEBSITE_URL = WEBSITE_URL;
+
