@@ -5,7 +5,7 @@ function ensureServerHosting() {
   const btn = document.getElementById('loginBtn');
   if (window.location.protocol === 'file:') {
     if (msg) {
-      msg.textContent = 'Open this page from https://lezar-exe-uid-2.onrender.com://.';
+      msg.textContent = 'Open this page from http://localhost:3000://.';
       msg.style.color = '#fecaca';
     }
     if (btn) btn.disabled = true;
